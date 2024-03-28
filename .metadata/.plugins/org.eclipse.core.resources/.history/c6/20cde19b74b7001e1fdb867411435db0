@@ -1,0 +1,16 @@
+package Java8;
+import java.util.function.Predicate;
+
+public class PredicateDemo {
+	public static void main(String[] args) {
+		String[] names= {"Abhi","Anji","Ramesh","Pavan","Ramulu"};
+		Predicate<String> p= ran-> ran.charAt(0)=='P';
+		
+		for(String san:names) {
+			if(p.test(san)) {
+				System.out.println(san);
+			}
+		}
+	}
+
+}
